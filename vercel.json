@@ -1,0 +1,28 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "messitv.net" }
+      ],
+      "destination": "https://v1.messitv.net/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "www.messitv.net" }
+      ],
+      "destination": "https://v1.messitv.net/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "(?!v1).*\\.messitv\\.net" }
+      ],
+      "destination": "https://v1.messitv.net/$1",
+      "permanent": true
+    }
+  ]
+}
